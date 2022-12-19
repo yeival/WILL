@@ -22,18 +22,9 @@ function filtrar(funcion) {
   //   name: 'lamp'
   // }]
   Array.prototype.filtrar = function(cb) {
-    // Crear el arreglo que se va a devolver
-    let newArray = [];
-    // Recorrer elementos actuales
-    this.forEach(item => {
-        // Analizar el resultado de la función de retorno o "callback"
-        if(cb(item)) {
-            // Si devuelve verdadero, agregar elemento
-            newArray.push(item);
-        }
-    });
-    // Devolver arreglo filtrado
-    return newArray;
+    var nuevo=[];
+    this.forEach(Element=>{if (cb(Element)) nuevo.push(Element)})
+      return nuevo;
   }
 
 };

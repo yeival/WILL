@@ -17,16 +17,7 @@ function pluck(array, propiedad) {
 
   var obj=array.map(function(current){return current[propiedad]});
 
-  /*var obj =[];
-  for(var i = 0; i < array.length; i++)
-  {
-   if(array[i].hasOwnProperty(propiedad))  
-   {
-    obj.push(array[propiedad]);  
-   }  
-   
-  }*/
-return obj;
+  return obj;
 }
 
 // No modifiques nada debajo de esta linea //
